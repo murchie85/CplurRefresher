@@ -20,10 +20,27 @@ using namespace std;
  * 
  */
 int main() {
-    cout << "      /" << endl;
-    cout << "     / " << endl;
-    cout << "    /  " << endl;    
-    cout << "   /   " << endl;
+    string characterName = "Adam";
+    int characterAge = 35;
+    
+    // SIMPLE PRINTOUT 
+    cout << "My name is " << characterName << endl;
+    cout << "My age is " << characterAge;
+    // new line
+    cout << "\n";
+     
+    
+    // STRING LEN FUNCTION 
+    cout << "Length of variable characterName is : \n";
+    cout << characterName.length();
+    cout << "First Character is : " << characterName[0] << "\n";
+    
+    // STRING FIND FUNCITON 
+    cout << characterName.find("d",0);
+    
+    
+    
+    
     return 0;
 }
 
