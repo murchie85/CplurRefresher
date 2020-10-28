@@ -1,6 +1,6 @@
-# C++ Notes
+# C++ Refresher
 
-
+![](https://engineering.fb.com/wp-content/uploads/2015/06/1522635669452_11.jpg)
 
 ## Declaration 
 
@@ -70,7 +70,7 @@ int mynumbers[20];
 mynumbers[4] = 8;
 ```
 
-
+### Threading 
 
 	
 
