@@ -114,6 +114,27 @@ if (t1.joinable())
 
 
 
+### NOTES 
+
+COMPARING PRIMATIVES  
+
+#### mutual exclusion lock  
+  
+The most efficient mechanism in both memory use and execution time. The basic use of a mutual exclusion lock is to serialize access to a resource.
+
+#### condition variable  
+
+The basic use of a condition variable is to block on a change of state; that is it provides a thread wait facility. Remember that a mutex lock must be acquired before blocking on a condition variable and must be unlocked after returning from pthread_cond_wait(). The mutex lock must also be held across the change of state that occurs before the corresponding call to pthread_cond_signal().
+
+#### Sephamore 
+
+The semaphore uses more memory than the condition variable. It is easier to use in some circumstances because a semaphore variable functions on state rather than on control. Unlike a lock, a semaphore does not have an owner. Any thread can increment a semaphore that has blocked.    
+
+#### Read-Write lock 
+
+The read-write lock permits concurrent reads and exclusive writes to a protected resource. The read-write lock is a single entity that can be locked in read or write mode. To modify a resource, a thread must first acquire the exclusive write lock. An exclusive write lock is not permitted until all read locks have been released.
+
+
   
 # BASICS 
 
