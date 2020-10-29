@@ -130,7 +130,7 @@ The basic use of a condition variable is to block on a change of state; that is 
 
 The semaphore uses more memory than the condition variable. It is easier to use in some circumstances because a semaphore variable functions on state rather than on control. Unlike a lock, a semaphore does not have an owner. Any thread can increment a semaphore that has blocked.    
 
-#### Read-Write lock 
+#### Read-Write lock   
 
 The read-write lock permits concurrent reads and exclusive writes to a protected resource. The read-write lock is a single entity that can be locked in read or write mode. To modify a resource, a thread must first acquire the exclusive write lock. An exclusive write lock is not permitted until all read locks have been released.
 
@@ -138,6 +138,9 @@ The read-write lock permits concurrent reads and exclusive writes to a protected
   
 # BASICS 
 
+## Class definition
+
+![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Classes-and-Objects-in-C.png)
 
 ## Declaration 
 
@@ -165,6 +168,7 @@ cout << "My name is " << characterName << "\n";
 `mystring.find("d",0);`  
 
 `mystring.substr(1,3);`  
+
 
 
 
